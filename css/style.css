@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f6f6f6;
+  color: #3c3c3c;
+}
+
+.page-title {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-description {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.container {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 15px 45px 15px;
+  width: 270px;
+}
+
+.employee-photo {
+  height: 250px;
+  width: 100%;
+}
+
+.photo-1 {
+  background: url('../images/john.jpg') center no-repeat;
+}
+
+.photo-2 {
+  background: url('../images/alex.png') center no-repeat;
+}
+
+.photo-3 {
+  background: url('../images/elena.png') center no-repeat;
+}
+
+.photo-4 {
+  background: url('../images/lily.png') center no-repeat;
+}
+
+.employee-photo:hover {
+  background: none;
+  background-color: #2ca8c6;
+}
+
+.employee-social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.social-media-link {
+  display: none;
+  margin: 0 2px;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #5ecbe7;
+  color: #f6f6f6;
+}
+
+.employee-photo:hover .social-media-link {
+  display: inline-block;
+}
+
+.social-media-link:hover {
+  transition: all .4s ease-in;
+  transform: rotate(360deg);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(44,168,198,1) 100%);
+  cursor: pointer;
+}
+
+.employee-data {
+  text-transform: capitalize;
+}
+
+.employee-name {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.employee-position {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6e6e6e;
+}
+
+
+
+
